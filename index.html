@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Row (flex) -->
+    <div id="top">
+        <!-- Title -->
+        <h1 class="title">Hanabi, But Like, Online Though</h1>
+        <!-- Top Right Div -->
+        <!-- Counters: Deck, clues, fuse -->
+        <div id="Counters">
+            <p> Remaining Cards: <span id="deck-size"> </span></p>
+            <p> Clue Tokens: <span id="clue-tokens"> </span></p>
+            <p> Fuse length: <span id="fuse-length"> </span></p>
+            <p> Score: <span id="score"> </span></p>
+        </div>
+    </div>
+    <!-- Main; just holds the left and right columns below top -->
+    <div id="main">
+        <!-- Left Column -->
+        <div id="left-main">
+            <!-- Other Player Hand (might always be a created div) -->
+            
+            <div class="game-region" id="playmats">
+<!-- paste back here -->
+            </div>
+        </div>
+        <!-- Right Column -->
+        <div id="right-main">
+            <!-- Game State (flex) -->
+            <div id="game-state">
+                <div class="game-region" id="stacks">
+                    <div class="card" id="red-stack">0</div>
+                    <div class="card" id="green-stack">0</div>
+                    <div class="card" id="blue-stack">0</div>
+                    <div class="card" id="yellow-stack">0</div>
+                    <div class="card" id="white-stack">0</div>
+                </div>
+                <div class="game-region" id="discard">
+
+                </div>
+            </div>
+            <!-- Chat box in bottom right -->
+            <div id="chat-box">
+                <div id="chat-log"></div>
+                <div id="chat-bottom">
+                    <input type="text" id="chat-input" onkeypress="chatKeypress(event)">
+                    <button id="send-button" onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

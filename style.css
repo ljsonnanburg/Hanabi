@@ -1,0 +1,205 @@
+body {
+    background-color: #12107a;
+  }
+
+
+/********
+* Top *
+********/
+
+#top {
+  display: flex;
+  justify-content: space-around;
+}
+.title {
+  color: goldenrod;
+}
+
+#top p {
+  color: goldenrod
+}
+
+h2 {
+  color: goldenrod;
+}
+
+/*******
+* Main *
+*******/
+#main{
+  display: flex;
+  justify-content: space-around;
+  gap: 3%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#left-main{
+  flex:1;
+  
+}
+#right-main{
+  flex: 1.5;
+}
+
+.game-region{
+  padding: 1%;
+  background-color: rgb(23, 23, 197);
+  border: groove lemonchiffon;
+  
+}
+/**************
+* Player Mats *
+**************/
+
+.playmat {
+  display: flex;
+  margin: 5%;
+}
+
+.hand {
+  display: flex;
+  gap: 2%;
+}
+.card {
+  background-color: #080730;
+  height: 3em;
+  width: 2em;
+  margin: 0.2em;
+  font-size: xx-large;
+  border-style: double;
+  border-color: antiquewhite;
+  text-align: center;
+  line-height: 3em;
+}
+
+/* .card-panel {
+  height: 5em;
+  width: 4em;
+} */
+.hand-button {
+  width: 100%;
+  margin: 0.3em;
+}
+
+.hint-row {
+  display: flex;
+}
+
+.hint {
+  height: 100%;
+  /* width: 1em; */
+  border-radius: 50%;
+  text-align: center;
+}
+
+.hint-row {
+  display: flex;
+  background-color: #080730;
+  justify-content: space-between;
+  padding: 2px;
+  gap: 1px;
+
+  /* height: 1em; */
+}
+.hint-pip {
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  /* font-size: 0.3em; */
+}
+
+/*************
+* Game State *
+*************/
+
+#game-state {
+  display: flex;
+  gap: 5%;
+}
+
+#stacks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+}
+
+#discard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+#red-stack {
+  color: red;
+}
+
+#green-stack {
+  color: green;
+}
+
+#blue-stack {
+  color: blue;
+}
+
+#yellow-stack {
+  color: yellow;
+}
+
+#white-stack {
+  color: white;
+}
+
+/***********
+* Chat Box *
+***********/
+
+/* TODO */
+
+#chat-box {
+  width: 80%;
+  /* margin: auto; */
+  margin-left: 10%;
+}
+
+#chat-log {
+  background-color: #7371e0;
+  border: lightblue solid 2px;
+  height: 10em;
+  overflow-y: auto;
+}
+
+#chat-bottom {
+  display: flex;
+  gap: 1em;
+}
+
+#chat-input {
+  width: 90%;
+}
+
+.message-separator {
+  color: lightblue;
+  margin: 0;
+}
+
+.chat-message {
+  margin: 0.2em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  overflow-wrap: break-word;
+}
+
+.system-message {
+  font-style: italic;
+  color: rgb(70, 67, 67);
+}
+
+.player-name {
+  font-weight: bold;
+}
+
